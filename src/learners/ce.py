@@ -65,7 +65,6 @@ class CELearner(BaseLearner):
                     s = f"Task : {task_name}   batch {j+1}/{len(dataloader)}   Loss : {loss.item():.4f}    time : {time.time() - self.start:.4f}s"
                 lg.info(s)
                 self.save(model_name=f"ckpt_{task_name}.pth")
-            break
     
     def evaluate(self, dataloaders, task_id):
         """Evaluate the model after training ona specified task

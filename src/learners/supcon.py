@@ -50,7 +50,6 @@ class SupConLearner(BaseLearner):
                     f"Epoch : {epoch}   batch {j+1}/{len(dataloader)}   Loss : {loss.item():.4f}    time : {time.time() - self.start:.4f}s"
                 )
                 self.save(model_name=f"ckpt_{task_name}.pth")
-            break
 
     def save_results(self):
         if self.params.run_id is not None:

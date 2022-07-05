@@ -69,8 +69,6 @@ class ERLearner(CELearner):
                     f"Task : {task_name}   batch {j+1}/{len(dataloader)}   Loss : {loss.item():.4f}    time : {time.time() - self.start:.4f}s"
                 )
                 self.save(model_name=f"ckpt_{task_name}.pth")
-                break
-            break
 
     def encode(self, dataloader, nbatches=-1):
         i = 0
