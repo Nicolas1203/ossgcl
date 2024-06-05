@@ -188,3 +188,16 @@ A sample code can be found in graph.ipynb to read load aggregated results in a d
 ## Tensorboard docker
 
     tensorboard --logdir=runs --host 0.0.0.0
+
+# Cite
+
+```bibtex
+@inproceedings{michel2022contrastive,
+  title={Contrastive learning for online semi-supervised general continual learning},
+  author={Michel, Nicolas and Negrel, Romain and Chierchia, Giovanni and Bercher, Jean-Fmn{\c{c}}ois},
+  booktitle={2022 IEEE International Conference on Image Processing (ICIP)},
+  pages={1896--1900},
+  year={2022},
+  organization={IEEE}
+}
+```
